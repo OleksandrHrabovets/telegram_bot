@@ -1,1 +1,17 @@
-
+server:
+  port: 5000
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+telegram:
+  bot:
+    username: ${BOT_USER}
+    token: ${BOT_TOKEN}
