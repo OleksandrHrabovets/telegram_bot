@@ -9,7 +9,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 @Component
 public class ReplyKeyboardFactory {
 
-  public ReplyKeyboardMarkup getReplyKeyboard(KeyboardRow row) {
+  public ReplyKeyboardMarkup getKeyboard(KeyboardRow row) {
 
     ReplyKeyboardMarkup replyKeyboard = new ReplyKeyboardMarkup();
     replyKeyboard.setResizeKeyboard(true);
